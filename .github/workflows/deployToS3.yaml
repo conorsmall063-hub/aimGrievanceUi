@@ -1,0 +1,23 @@
+name: Upload to S3
+on: [push]
+
+permissions:
+  id-token: write   # Required for requesting the JWT
+  contents: read    # Required for actions/checkout
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }} # The ARN of the IAM role
+          aws-region: us-east-1
+
+      - name: Sync files to S3
+        run: |
+          aws s3 sync ./dist s3://aim-infrastrucure-dev-s3bucket-4vqkbo5gzeyc --delete
