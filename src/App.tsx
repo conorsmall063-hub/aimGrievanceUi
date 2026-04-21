@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Textarea } from "@/components/ui/textarea"
-import { FieldDescription } from "@/components/ui/field"
+import { FieldLabel, FieldDescription } from "@/components/ui/field"
+import NavbarCustom from "@/components/custom/navbarCustom"
 import { useState } from "react"
 import i18n from "i18next"
 import { useTranslation, initReactI18next } from "react-i18next";
@@ -21,25 +22,40 @@ i18n
           six: '(Examples: They keep your documents, don’t pay you, or scare you into staying)',
           seven: 'Are you, or someone else, being forced to live in unsafe or overcrowded housing?',
           eight: '(Yes / No / Not sure - add details if known)',
-          nine: 'Are there any children involved?'
+          nine: 'Are there any children involved?',
+          ten: '(Yes / No / Not sure - add details if known)',
 
+          section2: ' Who Is Affected?',
+          one2: 'Who is being exploited?',
+          two2: '(e.g. yourself, someone you know, a group)',
+          three2: 'How many people are experiencing this?',
+          four2: 'How do you know about this situation?',
+          five2: '(e.g. I saw it, I heard it, someone told me, I experienced it)',
 
-//           Who Is Affected?
-// Who is being exploited?
-// (e.g. yourself, someone you know, a group)
-// How many people are experiencing this?
-// How do you know about this situation?
-// (e.g. I saw it, I heard it, someone told me, I experienced it)
+          section3: 'Who’s Responsible',
+          one3: 'Do you know who is responsible?',
+          two3: '(e.g. name of employer, agent, landlord — include any details you know)',
+          three3: 'What is the name of the business or organisation involved (if any)?',
 
-// Who’s Responsible
-// Do you know who is responsible?
-// (e.g. name of employer, agent, landlord — include any details you know)
-// What is the name of the business or organisation involved (if any)?
-// (Text field)
+          section4: 'Where and When',
+          one4: 'Where is this happening?',
+          two4: '(Address, city or region if known)',
+          three4: 'what kind of work is involved',
+          four4: 'When did this occur, and is it still happening?',
+          five4: '(Ongoing / Happened in the past)',
 
-// Where and When
-// Where is this happening?
-// (Address, city or region if known)
+          section5: 'Additional Info (Optional but Helpful)',
+          one5: 'Who else might know about this?',
+          two5: 'Has this been reported before?',
+          three5: '(Yes / No / Not sure -  if yes, to who?)',
+          four5: 'Would you like to upload any supporting files or photos?',
+          five5: 'Is there anything else we should know to help us understand or respond to this situation?',
+
+          section6: 'Privacy and Consent',
+          one6: 'Do you wish to remain anonymous?',
+          two6: '(Yes / No — We won’t collect any contact information unless you choose to share it. Providing contact details is optional, but it can help us get in touch to better understand your situation or connect you with support.)',
+          three6: 'CAPTCHA / Bot Check',
+          four6: '(Standard reCAPTCHA)',
         
         },
         
@@ -66,6 +82,7 @@ function App() {
   return (
     <>
       <section id="center">
+      <NavbarCustom></NavbarCustom>
         <div className ="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FieldDescription>{t('chosenLanguage')}</FieldDescription>
           <div className="flex gap-2 pb-4">
@@ -108,8 +125,88 @@ function App() {
           <div className="grid w-full gap-2 py-2">
             <FieldDescription>6. {t('nine')}</FieldDescription>
             <Textarea 
+              onChange={text => setText(text.target.value) }
+              placeholder={t('ten')} />
+          </div>
+
+          <FieldLabel>{t('section2')}</FieldLabel>
+          <div className="grid w-full gap-2 py-2">
+            <FieldDescription>7. {t('one2')}</FieldDescription>
+            <Textarea 
+              onChange={text => setText(text.target.value) }
+              placeholder={t('two2')} />
+          </div>
+          <div className="grid w-full gap-2 py-2">
+            <FieldDescription>8. {t('three2')}</FieldDescription>
+            <Textarea 
               onChange={text => setText(text.target.value) } />
           </div>
+          <div className="grid w-full gap-2 py-2">
+            <FieldDescription>9. {t('four2')}</FieldDescription>
+            <Textarea 
+              onChange={text => setText(text.target.value) }
+              placeholder={t('five2')} />
+          </div>
+
+
+          <FieldLabel>{t('section3')}</FieldLabel>
+          <div className="grid w-full gap-2 py-2">
+            <FieldDescription>10. {t('one3')}</FieldDescription>
+            <Textarea 
+              onChange={text => setText(text.target.value) }
+              placeholder={t('two3')} />
+          </div>
+          <div className="grid w-full gap-2 py-2">
+            <FieldDescription>11. {t('three3')}</FieldDescription>
+            <Textarea 
+              onChange={text => setText(text.target.value) } />
+          </div>
+
+          <FieldLabel>{t('section4')}</FieldLabel>
+          <div className="grid w-full gap-2 py-2">
+            <FieldDescription>12. {t('one4')}</FieldDescription>
+            <Textarea 
+              onChange={text => setText(text.target.value) }
+              placeholder={t('two4')} />
+          </div>
+          <div className="grid w-full gap-2 py-2">
+            <FieldDescription>13. {t('three4')}</FieldDescription>
+            <Textarea 
+              onChange={text => setText(text.target.value) } />
+          </div>
+          <div className="grid w-full gap-2 py-2">
+            <FieldDescription>14. {t('four4')}</FieldDescription>
+            <Textarea 
+              onChange={text => setText(text.target.value) }
+              placeholder={t('five4')} />
+          </div>
+
+
+          <FieldLabel>{t('section5')}</FieldLabel>
+          <div className="grid w-full gap-2 py-2">
+            <FieldDescription>15. {t('one5')}</FieldDescription>
+            <Textarea 
+              onChange={text => setText(text.target.value) } />
+          </div>
+          <div className="grid w-full gap-2 py-2">
+            <FieldDescription>16. {t('two5')}</FieldDescription>
+            <Textarea 
+              onChange={text => setText(text.target.value) }
+              placeholder={t('three5')} />
+          </div>
+          <div className="grid w-full gap-2 py-2">
+            <FieldDescription>17. {t('four5')}</FieldDescription>
+            <Textarea 
+              onChange={text => setText(text.target.value) } />
+          </div>
+          <div className="grid w-full gap-2 py-2">
+            <FieldDescription>18. {t('five5')}</FieldDescription>
+            <Textarea 
+              onChange={text => setText(text.target.value) } />
+          </div>
+
+
+
 
           <div className="flex">
           <div className="ml-auto pt-2">
