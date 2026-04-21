@@ -165,7 +165,7 @@ function App() {
 
           <div className="flex">
           <div className="ml-auto pt-2">
-            <Button>Submit Form</Button>
+            <Button onClick={() => {}}>Submit Form</Button>
           </div>
           </div>
         </div>
