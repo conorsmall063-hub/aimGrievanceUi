@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Textarea } from "@/components/ui/textarea"
-import { FieldLabel, FieldDescription } from "@/components/ui/field"
+import { FieldDescription } from "@/components/ui/field"
 import { useState } from "react"
 import i18n from "i18next"
 import { useTranslation, initReactI18next } from "react-i18next";
