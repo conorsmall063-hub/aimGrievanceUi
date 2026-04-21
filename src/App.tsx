@@ -5,7 +5,7 @@ import { useState } from "react"
 
 function App() {
 
-  const [text, setText] = useState("")
+  const [_, setText] = useState("")
 
   return (
     <>
