@@ -5,7 +5,6 @@ import NavbarCustom from "@/components/custom/navbarCustom"
 import { useState } from "react"
 import i18n from "i18next"
 import { useTranslation, initReactI18next } from "react-i18next";
-
 import enTranslation from './locales/en.json';
 import tagalogTranslation from './locales/tagalog.json';
 import hindiTranslation from './locales/hindi.json';
