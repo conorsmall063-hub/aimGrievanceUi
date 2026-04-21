@@ -39,7 +39,7 @@ function App() {
       <section id="center">
       <NavbarCustom></NavbarCustom>
         <div className ="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <FieldDescription>{t('chosenLanguage')}</FieldDescription>
+          <FieldLabel className="py-2">{t('chosenLanguage')}</FieldLabel>
           <div className="flex gap-2 pb-4">
           <Button onClick = {() => i18n.changeLanguage('en')}>English</Button>
           <Button onClick= {() => i18n.changeLanguage('ta')}>Tagalog</Button>
@@ -47,41 +47,41 @@ function App() {
           <Button onClick= {() => i18n.changeLanguage('ta')}>普通话</Button>
           <Button onClick= {() => i18n.changeLanguage('ta')}>lea faka-Tonga</Button>
           </div>
+
+          <FieldLabel>{t('sectionOne.header')}</FieldLabel>
           <div className="grid w-full gap-2 py-2">
-            <FieldDescription>1. {t('one')}</FieldDescription>
+            <FieldDescription>1. {t('sectionOne.questionOne')}</FieldDescription>
             <Textarea 
               onChange={text => setText(text.target.value) }
-              placeholder={t('two')} />
+              placeholder={t('sectionOne.promptOne')} />
           </div>
           <div className="grid w-full gap-2 py-2">
-            <FieldDescription>2. {t('three')}</FieldDescription>
-            <Textarea 
-              onChange={text => setText(text.target.value) }
-              placeholder={t('four')} />
-          </div>
-          <div className="grid w-full gap-2 py-2">
-            <FieldDescription>3. {t('four')}</FieldDescription>
+            <FieldDescription>2. {t('sectionOne.questionTwo')}</FieldDescription>
             <Textarea 
               onChange={text => setText(text.target.value) } />
           </div>
           <div className="grid w-full gap-2 py-2">
-            <FieldDescription>4. {t('five')}</FieldDescription>
+            <FieldDescription>3. {t('sectionOne.questionThree')}</FieldDescription>
             <Textarea 
-              onChange={text => setText(text.target.value) }
-              placeholder={t('six')} />
+              onChange={text => setText(text.target.value) } />
           </div>
           <div className="grid w-full gap-2 py-2">
-            <FieldDescription>5. {t('seven')}</FieldDescription>
+            <FieldDescription>4. {t('sectionOne.questionFour')}</FieldDescription>
             <Textarea 
               onChange={text => setText(text.target.value) }
-              placeholder={t('eight')} />
+              placeholder={t('sectionOne.promptFour')} />
           </div>
-
           <div className="grid w-full gap-2 py-2">
-            <FieldDescription>6. {t('nine')}</FieldDescription>
+            <FieldDescription>5. {t('sectionOne.questionFive')}</FieldDescription>
             <Textarea 
               onChange={text => setText(text.target.value) }
-              placeholder={t('ten')} />
+              placeholder={t('sectionOne.promptFive')} />
+          </div>
+          <div className="grid w-full gap-2 py-2">
+            <FieldDescription>6. {t('sectionOne.questionSix')}</FieldDescription>
+            <Textarea 
+              onChange={text => setText(text.target.value) }
+              placeholder={t('sectionOne.promptSix')} />
           </div>
 
           <FieldLabel>{t('sectionTwo.Header')}</FieldLabel>
@@ -104,58 +104,58 @@ function App() {
           </div>
 
 
-          <FieldLabel>{t('section3')}</FieldLabel>
+          <FieldLabel>{t('sectionThree.Header')}</FieldLabel>
           <div className="grid w-full gap-2 py-2">
-            <FieldDescription>10. {t('one3')}</FieldDescription>
+            <FieldDescription>10. {t('sectionThree.questionOne')}</FieldDescription>
             <Textarea 
               onChange={text => setText(text.target.value) }
-              placeholder={t('two3')} />
+              placeholder={t('sectionThree.promptOne')} />
           </div>
           <div className="grid w-full gap-2 py-2">
-            <FieldDescription>11. {t('three3')}</FieldDescription>
+            <FieldDescription>11. {t('sectionThree.questionTwo')}</FieldDescription>
             <Textarea 
               onChange={text => setText(text.target.value) } />
           </div>
 
-          <FieldLabel>{t('section4')}</FieldLabel>
+          <FieldLabel>{t('sectionFour.Header')}</FieldLabel>
           <div className="grid w-full gap-2 py-2">
-            <FieldDescription>12. {t('one4')}</FieldDescription>
+            <FieldDescription>12. {t('sectionFour.questionOne')}</FieldDescription>
             <Textarea 
               onChange={text => setText(text.target.value) }
-              placeholder={t('two4')} />
+              placeholder={t('sectionFour.promptOne')} />
           </div>
           <div className="grid w-full gap-2 py-2">
-            <FieldDescription>13. {t('three4')}</FieldDescription>
+            <FieldDescription>13. {t('sectionFour.questionTwo')}</FieldDescription>
             <Textarea 
               onChange={text => setText(text.target.value) } />
           </div>
           <div className="grid w-full gap-2 py-2">
-            <FieldDescription>14. {t('four4')}</FieldDescription>
+            <FieldDescription>14. {t('sectionFour.questionThree')}</FieldDescription>
             <Textarea 
               onChange={text => setText(text.target.value) }
-              placeholder={t('five4')} />
+              placeholder={t('sectionFour.promptThree')} />
           </div>
 
 
-          <FieldLabel>{t('section5')}</FieldLabel>
+          <FieldLabel>{t('sectionFive.Header')}</FieldLabel>
           <div className="grid w-full gap-2 py-2">
-            <FieldDescription>15. {t('one5')}</FieldDescription>
+            <FieldDescription>15. {t('sectionFive.questionOne')}</FieldDescription>
             <Textarea 
               onChange={text => setText(text.target.value) } />
           </div>
           <div className="grid w-full gap-2 py-2">
-            <FieldDescription>16. {t('two5')}</FieldDescription>
+            <FieldDescription>16. {t('sectionFive.questionTwo')}</FieldDescription>
             <Textarea 
               onChange={text => setText(text.target.value) }
-              placeholder={t('three5')} />
+              placeholder={t('sectionFive.promptTwo')} />
           </div>
           <div className="grid w-full gap-2 py-2">
-            <FieldDescription>17. {t('four5')}</FieldDescription>
+            <FieldDescription>17. {t('sectionFive.questionThree')}</FieldDescription>
             <Textarea 
               onChange={text => setText(text.target.value) } />
           </div>
           <div className="grid w-full gap-2 py-2">
-            <FieldDescription>18. {t('five5')}</FieldDescription>
+            <FieldDescription>18. {t('sectionFive.questionFour')}</FieldDescription>
             <Textarea 
               onChange={text => setText(text.target.value) } />
           </div>
