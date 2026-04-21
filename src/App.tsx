@@ -7,19 +7,20 @@ import i18n from "i18next"
 import { useTranslation, initReactI18next } from "react-i18next";
 
 import enTranslation from './locales/en.json';
+import tagalogTranslation from './locales/tagalog.json';
+import hindiTranslation from './locales/hindi.json';
+import mandarinTranslation from './locales/mandarin.json';
+import tonganTranslation from './locales/tongan.json';
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
     resources: {
-      en: {
-        translation: enTranslation
-      },
-      fr: {
-        translation: {
-          key: 'hello from french 1'
-        },
-      }
+      en: { translation: enTranslation },
+      tagalog: { translation: tagalogTranslation },
+      hindi: { translation: hindiTranslation },
+      mandarin: { translation: mandarinTranslation },
+      tongan: { translation: tonganTranslation }
     },
     lng: "en", // if you're using a language detector, do not define the lng option
     fallbackLng: "en",
@@ -42,10 +43,10 @@ function App() {
           <FieldLabel className="py-2">{t('chosenLanguage')}</FieldLabel>
           <div className="flex gap-2 pb-4">
           <Button onClick = {() => i18n.changeLanguage('en')}>English</Button>
-          <Button onClick= {() => i18n.changeLanguage('ta')}>Tagalog</Button>
-          <Button onClick= {() => i18n.changeLanguage('ta')}>हिंदी </Button>
-          <Button onClick= {() => i18n.changeLanguage('ta')}>普通话</Button>
-          <Button onClick= {() => i18n.changeLanguage('ta')}>lea faka-Tonga</Button>
+          <Button onClick= {() => i18n.changeLanguage('tagalog')}>Tagalog</Button>
+          <Button onClick= {() => i18n.changeLanguage('hindi')}>हिंदी </Button>
+          <Button onClick= {() => i18n.changeLanguage('mandarin')}>普通话</Button>
+          <Button onClick= {() => i18n.changeLanguage('tongan')}>lea faka-Tonga</Button>
           </div>
 
           <FieldLabel>{t('sectionOne.header')}</FieldLabel>
