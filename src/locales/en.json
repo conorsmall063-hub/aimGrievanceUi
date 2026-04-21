@@ -1,0 +1,53 @@
+{
+    "chosenLanguage": "Which is your prefered language?",
+    "sectionOne": {
+        "header": "What’s Happening?",
+        "questionOne": "What would you like to report?",
+        "promptOne": "(Multi-select: Wage Theft, Excessive Work Hours, etc.)",
+        "questionTwo": "Please describe what is happening.",
+        "questionThree": "What is different to what you were expecting?",
+        "questionFour": "Has anyone taken your passport, threatened you, or stopped you from leaving your job?",
+        "promptFour": "(Examples: They keep your documents, don’t pay you, or scare you into staying)",
+        "questionFive": "Are you, or someone else, being forced to live in unsafe or overcrowded housing?",
+        "promptFive": "(Yes / No / Not sure - add details if known)",
+        "questionSix": "Are there any children involved?",
+        "promptSix": "(Yes / No / Not sure - add details if known)"
+    },
+    "sectionTwo": {
+        "Header": " Who Is Affected?",
+        "questionOne": "Who is being exploited?",
+        "promptOne": "(e.g. yourself, someone you know, a group)",
+        "questionTwo": "How many people are experiencing this?",
+        "questionThree": "How do you know about this situation?",
+        "promptThree": "(e.g. I saw it, I heard it, someone told me, I experienced it)"
+    },
+    "sectionThree": {
+        "Header": "Who’s Responsible",
+        "questionOne": "Do you know who is responsible?",
+        "promptOne": "(e.g. name of employer, agent, landlord — include any details you know)",
+        "questionTwo": "What is the name of the business or organisation involved (if any)?"
+    },
+    "sectionFour": {
+        "Header": "Where and When",
+        "questionOne": "Where is this happening?",
+        "promptOne": "(Address, city or region if known)",
+        "questionTwo": "what kind of work is involved",
+        "questionThree": "When did this occur, and is it still happening?",
+        "promptThree": "(Ongoing / Happened in the past)"
+    },
+    "sectionFive":{
+        "Header": "Additional Info (Optional but Helpful)",
+        "questionOne": "Who else might know about this?",
+        "questionTwo": "Has this been reported before?",
+        "promptTwo": "(Yes / No / Not sure -  if yes, to who?)",
+        "questionThree": "Would you like to upload any supporting files or photos?",
+        "questionFour": "Is there anything else we should know to help us understand or respond to this situation?"
+    },
+    "sectionSix": {
+        "Header": "Privacy and Consent",
+        "questionOne": "Do you wish to remain anonymous?",
+        "promptOne": "(Yes / No — We won’t collect any contact information unless you choose to share it. Providing contact details is optional, but it can help us get in touch to better understand your situation or connect you with support.)",
+        "questionTwo": "CAPTCHA / Bot Check",
+        "promptTwo": "(Standard reCAPTCHA)"
+    }
+}

@@ -1,0 +1,53 @@
+{
+  "chosenLanguage": "Ko e hā hoʻo lea ʻoku ke fili?",
+  "sectionOne": {
+    "header": "Ko e Hā ʻOku Hoko?",
+    "questionOne": "Ko e hā ʻoku ke fie lipooti?",
+    "promptOne": "(Fili ʻoku lahi: Kaihaʻasi totongi ngāue, Houa ngāue fuʻu loloa, mo e hā fua)",
+    "questionTwo": "Fakamolemole fakamatalaʻi ʻa e meʻa ʻoku hoko.",
+    "questionThree": "Ko e hā ʻoku kehekehe ai mei he meʻa naʻa ke ʻamanaki ki ai?",
+    "questionFour": "Kuo ʻi ai ha taha kuo ne toʻo hoʻo passport, fakamanamana atu kiate koe, pe taofi koe mei he hū mei hoʻo ngāue?",
+    "promptFour": "(Fakamatala: ʻOku nau tauhi hoʻo ngaahi pepa, ʻikai totongi koe, pe fakamanamana ke ke nofo)",
+    "questionFive": "ʻOku ke pe ha taha kehe ʻoku fakamālohi ke nofo ʻi ha nofoʻanga ʻoku ʻikai malu pe ʻoku tōtuʻa ʻaupito?",
+    "promptFive": "(ʻIo / ʻIkai / ʻIkai ʻilo lelei - tānaki atu ha fakamatala kapau ʻoku ke ʻilo)",
+    "questionSix": "ʻOku ʻi ai ha fānau ʻoku kau ai?",
+    "promptSix": "(ʻIo / ʻIkai / ʻIkai ʻilo lelei - tānaki atu ha fakamatala kapau ʻoku ke ʻilo)"
+  },
+  "sectionTwo": {
+    "Header": "Ko Hai ʻOku Afi?",
+    "questionOne": "Ko hai ʻoku fakamanavahē pe fakaehauaʻi?",
+    "promptOne": "(faʻahinga: koe, ha taha ʻoku ke ʻilo, ha kulupu)",
+    "questionTwo": "ʻOku tokolahi fēfē ʻa e kakai ʻoku nau fehangahangai mo e meʻá ni?",
+    "questionThree": "Naʻa ke ʻilo fēfē ki he tuʻunga ko ʻení?",
+    "promptThree": "(faʻahinga: naʻaku sio ki ai, naʻaku fanongo ki ai, naʻe tala mai, naʻaku aʻusia)"
+  },
+  "sectionThree": {
+    "Header": "Ko Hai ʻOku Ne Fai ʻa e Meʻá",
+    "questionOne": "ʻOku ke ʻilo ko hai ʻoku ne fai ʻa e meʻá?",
+    "promptOne": "(faʻahinga: hingoa ʻo e pule ngāue, ʻekeni, landlord — fakakau ha fakamatala ʻoku ke ʻilo)",
+    "questionTwo": "Ko e hā ʻa e hingoa ʻo e pisinisi pe kautaha ʻoku kau ai (kapau ʻoku ʻi ai)?"
+  },
+  "sectionFour": {
+    "Header": "Feituʻu mo e Taimi",
+    "questionOne": "ʻOku hoko ʻa e meʻá ni ʻi fe?",
+    "promptOne": "(tuʻasila, kolo pe feituʻu kapau ʻoku ʻilo)",
+    "questionTwo": "Ko e hā ʻa e faʻahinga ngāue ʻoku kau ai?",
+    "questionThree": "Naʻe hoko ʻeni ʻi fēfē taimi, pea ʻoku kei hoko pē?",
+    "promptThree": "(ʻOku kei hoko / Naʻe hoko ʻi he kuohili)"
+  },
+  "sectionFive": {
+    "Header": "Fakamatala Lahi Ange (Filifili pē ka ʻoku tokoni)",
+    "questionOne": "Ko hai toe ʻe lava ke nau ʻilo ki heni?",
+    "questionTwo": "Kuo lipooti ʻa e meʻá ni kimuʻa?",
+    "promptTwo": "(ʻIo / ʻIkai / ʻIkai ʻilo lelei - kapau ʻio, ki ai?)",
+    "questionThree": "ʻOku ke fie tuku hake ha ngaahi faile pe ngaahi fakatātā?",
+    "questionFour": "ʻOku ʻi ai ha toe meʻa kehe ʻe tokoni ke mau mahinoʻi pe tali ʻa e tuʻunga ko ʻení?"
+  },
+  "sectionSix": {
+    "Header": "Fakamatapule mo e Fakangofua",
+    "questionOne": "ʻOku ke fie nofo taʻeʻiloʻi (anonymous)?",
+    "promptOne": "(ʻIo / ʻIkai — ʻE ʻikai ke mau tānaki ha fakamatala fetuʻutaki kapau ʻoku ʻikai ke ke fili ke vahevahe. ʻOku filifili pē ʻa e fakamatala fetuʻutaki, ka ʻe lava ke tokoni ke mau fetuʻutaki atu kiate koe pe fakahoko ha tokoni.)",
+    "questionTwo": "CAPTCHA / Sivi Bot",
+    "promptTwo": "(reCAPTCHA tuʻunga)"
+  }
+}

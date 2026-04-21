@@ -1,0 +1,53 @@
+{
+  "chosenLanguage": "Alin ang iyong gustong wika?",
+  "sectionOne": {
+    "header": "Ano ang Nangyayari?",
+    "questionOne": "Ano ang nais mong iulat?",
+    "promptOne": "(Maaaring pumili ng higit sa isa: Pagnanakaw ng sahod, Labis na oras ng trabaho, atbp.)",
+    "questionTwo": "Pakilarawan kung ano ang nangyayari.",
+    "questionThree": "Ano ang kaibahan nito sa inaasahan mo?",
+    "questionFour": "May kumuha ba ng iyong pasaporte, nagbanta sa iyo, o pumigil sa iyong umalis sa iyong trabaho?",
+    "promptFour": "(Halimbawa: Kinukuha nila ang iyong mga dokumento, hindi ka binabayaran, o tinatakot kang manatili)",
+    "questionFive": "Ikaw ba, o ang iba, ay pinipilit na tumira sa hindi ligtas o siksikang tirahan?",
+    "promptFive": "(Oo / Hindi / Hindi sigurado - magdagdag ng detalye kung alam)",
+    "questionSix": "May mga batang sangkot ba?",
+    "promptSix": "(Oo / Hindi / Hindi sigurado - magdagdag ng detalye kung alam)"
+  },
+  "sectionTwo": {
+    "Header": "Sino ang Apektado?",
+    "questionOne": "Sino ang inaabuso o pinagsasamantalahan?",
+    "promptOne": "(hal. ikaw, kakilala mo, isang grupo)",
+    "questionTwo": "Ilan ang nakakaranas nito?",
+    "questionThree": "Paano mo nalaman ang sitwasyong ito?",
+    "promptThree": "(hal. nakita ko, narinig ko, may nagsabi sa akin, naranasan ko mismo)"
+  },
+  "sectionThree": {
+    "Header": "Sino ang May Pananagutan",
+    "questionOne": "Alam mo ba kung sino ang responsable?",
+    "promptOne": "(hal. pangalan ng employer, ahente, landlord — ilagay ang anumang detalye na alam mo)",
+    "questionTwo": "Ano ang pangalan ng negosyo o organisasyong sangkot (kung meron)?"
+  },
+  "sectionFour": {
+    "Header": "Saan at Kailan",
+    "questionOne": "Saan ito nangyayari?",
+    "promptOne": "(Address, lungsod o rehiyon kung alam)",
+    "questionTwo": "Anong uri ng trabaho ang sangkot?",
+    "questionThree": "Kailan ito nangyari, at nangyayari pa ba ito?",
+    "promptThree": "(Patuloy / Nangyari na sa nakaraan)"
+  },
+  "sectionFive": {
+    "Header": "Karagdagang Impormasyon (Opsyonal ngunit Makakatulong)",
+    "questionOne": "Sino pa ang maaaring may alam tungkol dito?",
+    "questionTwo": "Naireport na ba ito dati?",
+    "promptTwo": "(Oo / Hindi / Hindi sigurado - kung oo, kanino?)",
+    "questionThree": "Nais mo bang mag-upload ng mga sumusuportang file o larawan?",
+    "questionFour": "Mayroon pa bang ibang dapat naming malaman upang mas maintindihan o matugunan ang sitwasyong ito?"
+  },
+  "sectionSix": {
+    "Header": "Privacy at Pahintulot",
+    "questionOne": "Nais mo bang manatiling hindi nagpapakilala?",
+    "promptOne": "(Oo / Hindi — Hindi kami mangongolekta ng anumang contact information maliban kung pipiliin mong ibahagi ito. Opsyonal ang pagbibigay ng contact details, ngunit makakatulong ito para makipag-ugnayan kami sa iyo upang mas maintindihan ang iyong sitwasyon o maiugnay ka sa suporta.)",
+    "questionTwo": "CAPTCHA / Pagsusuri kung Bot",
+    "promptTwo": "(Karaniwang reCAPTCHA)"
+  }
+}

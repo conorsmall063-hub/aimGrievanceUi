@@ -1,0 +1,53 @@
+{
+  "chosenLanguage": "您偏好的语言是什么？",
+  "sectionOne": {
+    "header": "发生了什么？",
+    "questionOne": "您想要举报什么？",
+    "promptOne": "（可多选：工资被克扣、工作时间过长等）",
+    "questionTwo": "请描述正在发生的情况。",
+    "questionThree": "这与您的预期有什么不同？",
+    "questionFour": "是否有人拿走了您的护照、威胁您，或阻止您离开工作？",
+    "promptFour": "（例如：他们扣留您的证件、不支付工资，或通过恐吓让您留下）",
+    "questionFive": "您或他人是否被迫居住在不安全或过于拥挤的住所？",
+    "promptFive": "（是 / 否 / 不确定 - 如了解请补充细节）",
+    "questionSix": "是否涉及儿童？",
+    "promptSix": "（是 / 否 / 不确定 - 如了解请补充细节）"
+  },
+  "sectionTwo": {
+    "Header": "谁受到影响？",
+    "questionOne": "谁正在被剥削？",
+    "promptOne": "（例如：您本人、您认识的人、一个群体）",
+    "questionTwo": "有多少人正在经历这种情况？",
+    "questionThree": "您是如何得知这一情况的？",
+    "promptThree": "（例如：我看到的、我听说的、有人告诉我的、我亲身经历的）"
+  },
+  "sectionThree": {
+    "Header": "谁应负责",
+    "questionOne": "您是否知道谁对此负责？",
+    "promptOne": "（例如：雇主、代理人、房东的姓名——请提供您所知道的任何信息）",
+    "questionTwo": "相关的企业或组织名称是什么（如有）？"
+  },
+  "sectionFour": {
+    "Header": "地点与时间",
+    "questionOne": "这发生在哪里？",
+    "promptOne": "（地址、城市或地区（如已知））",
+    "questionTwo": "涉及哪种类型的工作？",
+    "questionThree": "这是什么时候发生的？现在是否仍在发生？",
+    "promptThree": "（正在发生 / 过去发生过）"
+  },
+  "sectionFive": {
+    "Header": "其他信息（可选但有帮助）",
+    "questionOne": "还有谁可能了解此事？",
+    "questionTwo": "此事是否曾被举报过？",
+    "promptTwo": "（是 / 否 / 不确定 - 如果是，举报给了谁？）",
+    "questionThree": "您是否希望上传任何支持性文件或照片？",
+    "questionFour": "是否还有其他信息可以帮助我们更好地理解或处理此情况？"
+  },
+  "sectionSix": {
+    "Header": "隐私与同意",
+    "questionOne": "您是否希望保持匿名？",
+    "promptOne": "（是 / 否——除非您选择提供，否则我们不会收集任何联系信息。提供联系方式是可选的，但有助于我们与您联系，以更好地了解您的情况或为您提供支持。）",
+    "questionTwo": "验证码 / 机器人验证",
+    "promptTwo": "（标准 reCAPTCHA）"
+  }
+}
