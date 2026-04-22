@@ -10,6 +10,7 @@ import tagalogTranslation from './locales/tagalog.json';
 import hindiTranslation from './locales/hindi.json';
 import mandarinTranslation from './locales/mandarin.json';
 import tonganTranslation from './locales/tongan.json';
+import type { Question, Survey } from "./form"
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
@@ -34,6 +35,58 @@ function App() {
 
   const [_, setText] = useState("")
 
+  const survey: Survey = {
+    sections:[
+      {
+        title: t('sectionOne.header'),
+        fields:[
+          {
+            type: "text",
+            id: 'questionOne',
+            question: t('sectionOne.questionOne'),
+            value: 'string',
+            prompt: t('sectionOne.promptOne')
+          },
+          {
+            type: "text",
+            id: 'questionOne',
+            question: t('sectionOne.questionTwo'),
+            value: 'string',
+            prompt: ''
+          },
+          {
+            type: "text",
+            id: 'questionOne',
+            question: t('sectionOne.questionThree'),
+            value: 'string',
+            prompt: ''
+          },
+          {
+            type: "text",
+            id: 'questionOne',
+            question: t('sectionOne.questionFour'),
+            value: 'string',
+            prompt: t('sectionOne.promptFour'),
+          },
+          {
+            type: "text",
+            id: 'questionOne',
+            question: t('sectionOne.questionFive'),
+            value: 'string',
+            prompt: t('sectionOne.promptFive'),
+          },
+          {
+            type: "text",
+            id: 'questionOne',
+            question: t('sectionOne.questionSix'),
+            value: 'string',
+            prompt: t('sectionOne.promptSix'),
+          },
+        ]
+      }
+    ]
+  }
+
   return (
     <>
       <section id="center">
@@ -48,41 +101,24 @@ function App() {
           <Button onClick= {() => i18n.changeLanguage('tongan')}>lea faka-Tonga</Button>
           </div>
 
-          <FieldLabel>{t('sectionOne.header')}</FieldLabel>
-          <div className="grid w-full gap-2 py-2">
-            <FieldDescription>1. {t('sectionOne.questionOne')}</FieldDescription>
-            <Textarea 
-              onChange={text => setText(text.target.value) }
-              placeholder={t('sectionOne.promptOne')} />
-          </div>
-          <div className="grid w-full gap-2 py-2">
-            <FieldDescription>2. {t('sectionOne.questionTwo')}</FieldDescription>
-            <Textarea 
-              onChange={text => setText(text.target.value) } />
-          </div>
-          <div className="grid w-full gap-2 py-2">
-            <FieldDescription>3. {t('sectionOne.questionThree')}</FieldDescription>
-            <Textarea 
-              onChange={text => setText(text.target.value) } />
-          </div>
-          <div className="grid w-full gap-2 py-2">
-            <FieldDescription>4. {t('sectionOne.questionFour')}</FieldDescription>
-            <Textarea 
-              onChange={text => setText(text.target.value) }
-              placeholder={t('sectionOne.promptFour')} />
-          </div>
-          <div className="grid w-full gap-2 py-2">
-            <FieldDescription>5. {t('sectionOne.questionFive')}</FieldDescription>
-            <Textarea 
-              onChange={text => setText(text.target.value) }
-              placeholder={t('sectionOne.promptFive')} />
-          </div>
-          <div className="grid w-full gap-2 py-2">
-            <FieldDescription>6. {t('sectionOne.questionSix')}</FieldDescription>
-            <Textarea 
-              onChange={text => setText(text.target.value) }
-              placeholder={t('sectionOne.promptSix')} />
-          </div>
+          {/* <FieldLabel>{t('sectionOne.header')}</FieldLabel> */}
+
+          {survey.sections.map((section, id) => (
+            <div>
+            <FieldLabel>{section.title}</FieldLabel>
+              {section.fields.map((question: Question, key) => (
+                <div className="grid w-full gap-2 py-2">
+                  <FieldDescription>{key +". " + question.question}</FieldDescription>
+                  {"prompt" in question &&
+                  <Textarea 
+                    onChange={text => setText(text.target.value) }
+                    placeholder={question.prompt ? question.prompt : ''} />
+                  }
+                </div>
+              ))}
+            </div>
+          ))
+          }
 
           <FieldLabel>{t('sectionTwo.Header')}</FieldLabel>
           <div className="grid w-full gap-2 py-2">

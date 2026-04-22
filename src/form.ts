@@ -1,11 +1,12 @@
-type TextQuestion = {
+export type TextQuestion = {
   type: "text";
   id: string;
   question: string;
   value: string;
+  prompt: string;
 };
 
-type NumberQuestion = {
+export type NumberQuestion = {
   type: "number";
   id: string;
   question: string;
@@ -20,13 +21,13 @@ type ChoiceQuestion = {
   value: string;
 };
 
-type Question = TextQuestion | NumberQuestion | ChoiceQuestion;
+export type Question = TextQuestion | NumberQuestion | ChoiceQuestion;
 
-type Section = {
+export type Section = {
   title: string;
   fields: Question[];
 };
 
-type Survey = {
+export type Survey = {
   sections: Section[];
 };

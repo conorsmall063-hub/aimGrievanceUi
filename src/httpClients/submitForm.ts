@@ -1,10 +1,10 @@
-import axios from 'axios';
+// import axios from 'axios';
 
-type Form = {
-  id: number;
-  name: string;
-};
+// type Form = {
+//   id: number;
+//   name: string;
+// };
 
-function postForm(form: Form) {
-    axios.post('localhost:8080', form)
-}
+// function postForm(form: Form) {
+//     axios.post('localhost:8080', form)
+// }
