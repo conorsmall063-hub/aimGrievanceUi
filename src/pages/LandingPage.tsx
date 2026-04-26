@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button"
 import { useNavigate } from "react-router-dom"
 
 const navLinks = [
-  { name: "About Us", href: "#about" },
-  { name: "Contact Us", href: "#contact" },
+  { name: "About Us", path: "/about" },
+  { name: "Contact Us", path: "/contact" },
 ]
 
 const LandingPage = () => {
@@ -27,13 +27,13 @@ const LandingPage = () => {
 
         <div className="hidden items-center gap-7 md:flex">
           {navLinks.map((link) => (
-            <a
+            <button
               key={link.name}
-              href={link.href}
+              onClick={() => navigate(link.path)}
               className="text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
               {link.name}
-            </a>
+            </button>
           ))}
           <button
             aria-label="Search"

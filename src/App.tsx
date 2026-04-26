@@ -1,6 +1,8 @@
 import { Routes, Route, Navigate } from "react-router-dom"
 import LandingPage from "@/pages/LandingPage"
 import GrievancePortal from "@/pages/GrievancePortal"
+import AboutPage from "@/pages/AboutPage"
+import ContactPage from "@/pages/ContactPage"
 
 import i18n from "i18next"
 import { initReactI18next } from "react-i18next"
@@ -30,6 +32,8 @@ function App() {
     <Routes>
       <Route path="/" element={<LandingPage />} />
       <Route path="/form" element={<GrievancePortal />} />
+      <Route path="/about" element={<AboutPage />} />
+      <Route path="/contact" element={<ContactPage />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   )
