@@ -1,24 +1,9 @@
-import { useNavigate } from "react-router-dom"
-import { ChevronLeft } from "lucide-react"
+import { SiteHeader } from "@/components/features/SiteHeader"
 
 const ContactPage = () => {
-  const navigate = useNavigate()
   return (
     <div className="min-h-screen bg-background">
-      <header className="sticky top-0 z-10 border-b border-border bg-card">
-        <div className="mx-auto flex h-14 max-w-5xl items-center gap-3 px-4 sm:px-6">
-          <button
-            onClick={() => navigate('/')}
-            className="flex items-center gap-1 text-sm text-muted-foreground transition-colors hover:text-foreground"
-          >
-            <ChevronLeft className="size-4" />
-            Back
-          </button>
-          <span className="text-border">|</span>
-          <span className="text-sm font-bold uppercase tracking-widest text-foreground">AIM</span>
-          <span className="text-xs text-muted-foreground">Contact Us</span>
-        </div>
-      </header>
+      <SiteHeader showBackButton title="AIM" subtitle="Contact Us" />
 
       <main className="mx-auto max-w-5xl px-4 py-16 sm:px-6">
         <h1 className="mb-6 text-4xl font-black tracking-tight text-foreground">Contact Us</h1>

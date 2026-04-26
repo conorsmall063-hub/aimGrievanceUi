@@ -1,14 +1,29 @@
-import { Search } from "lucide-react"
+import { Search, Globe } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useNavigate } from "react-router-dom"
+import { useTranslation } from "react-i18next"
+import { useState } from "react"
 
 const navLinks = [
   { name: "About Us", path: "/about" },
   { name: "Contact Us", path: "/contact" },
 ]
 
+const languages = [
+  { code: 'en', name: 'English' },
+  { code: 'tagalog', name: 'Tagalog' },
+  { code: 'hindi', name: 'हिंदी' },
+  { code: 'mandarin', name: '普通话' },
+  { code: 'tongan', name: 'lea faka-Tonga' },
+]
+
 const LandingPage = () => {
   const navigate = useNavigate()
+  const { i18n } = useTranslation()
+  const [isLangOpen, setIsLangOpen] = useState(false)
+
+  const currentLang = languages.find(l => l.code === i18n.language) || languages[0]
+
   return (
     <div className="relative min-h-screen overflow-hidden bg-background">
 
@@ -35,6 +50,46 @@ const LandingPage = () => {
               {link.name}
             </button>
           ))}
+
+          {/* Language Selector Dropdown */}
+          <div className="relative">
+            <button
+              onClick={() => setIsLangOpen(!isLangOpen)}
+              className="flex items-center gap-2 rounded-lg border border-border px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground hover:bg-muted"
+              title="Change language"
+            >
+              <Globe className="size-4" />
+              <span className="hidden lg:inline">{currentLang.name}</span>
+            </button>
+
+            {isLangOpen && (
+              <>
+                <div
+                  className="fixed inset-0"
+                  onClick={() => setIsLangOpen(false)}
+                />
+                <div className="absolute right-0 mt-2 w-48 rounded-lg border border-border bg-card shadow-lg z-20">
+                  {languages.map((lang) => (
+                    <button
+                      key={lang.code}
+                      onClick={() => {
+                        i18n.changeLanguage(lang.code)
+                        setIsLangOpen(false)
+                      }}
+                      className={`w-full px-4 py-2.5 text-left text-sm transition-colors ${
+                        lang.code === i18n.language
+                          ? 'bg-primary/10 text-foreground font-medium'
+                          : 'text-muted-foreground hover:bg-muted hover:text-foreground'
+                      } first:rounded-t-lg last:rounded-b-lg`}
+                    >
+                      {lang.name}
+                    </button>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+
           <button
             aria-label="Search"
             className="rounded-full border border-border p-2 transition-colors hover:bg-muted"
