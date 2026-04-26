@@ -6,11 +6,7 @@ import { useTranslation } from "react-i18next"
 import { createGrievanceSurvey } from "@/data/grievanceSurvey"
 import { TextQuestion as TextQuestionComponent } from "@/components/features/TextQuestion"
 
-type greivencePortalProps = {
-  onSubmitGrievance?: () => void
-}
-
-const GrievancePortal = ({ onSubmitGrievance }: greivencePortalProps) => {
+const GrievancePortal = () => {
   const [_, setText] = useState("")
   const { t, i18n } = useTranslation()
   const survey = createGrievanceSurvey(t)

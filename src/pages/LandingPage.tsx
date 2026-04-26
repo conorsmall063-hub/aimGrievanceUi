@@ -1,16 +1,14 @@
 import { Search } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { useNavigate } from "react-router-dom"
 
 const navLinks = [
   { name: "About Us", href: "#about" },
   { name: "Contact Us", href: "#contact" },
 ]
 
-type LandingPageProps = {
-  onSubmitGrievance?: () => void
-}
-
-const LandingPage = ({ onSubmitGrievance }: LandingPageProps) => {
+const LandingPage = () => {
+  const navigate = useNavigate()
   return (
     <div className="relative min-h-screen overflow-hidden bg-background">
 
@@ -55,7 +53,7 @@ const LandingPage = ({ onSubmitGrievance }: LandingPageProps) => {
           </h1>
           {/* Uses --primary (brand yellow) via variant="default" */}
           <Button
-            onClick={onSubmitGrievance}
+            onClick={() => navigate('/form')}
             className="h-auto rounded-lg px-8 py-4 text-sm font-bold uppercase tracking-widest"
           >
             Submit a Grievance
